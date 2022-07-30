@@ -4,33 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolió</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Kocsi Tomas Web Developer</title>
 </head>
 <body>
-    <header>
+    <header id="home">
         <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Skills</a></li>
+            <ul class="header">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h1>Kocsis Tomas</h1>
-        <h2>Web Developer</h2>
+        <h2 class="web-developer">Web Developer</h2>
         <img src="" alt="">
         <div class="social">
             <a href=""></a>
             <a href=""></a>
         </div>
-    </main>
-    <section>
-        <h2 class="about">About</h2>
+    <section id="about">
+        <h2>About</h2>
         <p>I am Kocsis Tomas a Web Developer.</p>
         <p></p>
     </section>
-    <section>
+    <section id="skills">
         <h2 class="skills">Skills</h2>
         <p>Web: React.js, Node.js, HTML, CSS, JS</p>
         <p>Databases: MySQL</p>
@@ -38,6 +39,39 @@
         <p>Tools: Git</p>
         <p>Languages: JavaScript, Python, Django</p>
     </section>
-    <footer></footer>
+    <section id="contact">
+        <h2 class="contact">Contact</h2>
+        <form class="form" action="" method="post"></form>
+      <div class="fotarolo">
+        <div class="tarolo">
+            <label for="name-id">Your Name:</label>
+            <input type="text" name="Name" id="name-id"> 
+        </div>
+        <div class="tarolo">
+            <label for="email-id">Your Mail:</label>
+            <input type="text" name="email" id="email-id">
+        </div>
+        <div class="tarolo">
+            <label for="message-id">Your Message:</label>
+            <input type="text" name="message" id="message-id">
+        </div>
+        <div>
+            <input class="submit" type="submit" value="SUBMIT">
+        </div>
+    </div>
+        
+    </section>
+    </main>
+    <footer>
+        <nav>
+            <ul class="footer">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <p class="copyright">Copyright ​©​ 2022 Tomás Kocsis</p>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,84 @@
+body {
+    background-color: rgb(77, 77, 114);
+    color: whitesmoke;
+    margin-left: 20px;
+   
+}
+
+.header{
+ 
+    text-decoration: underline;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:10px;
+    background-color: rgb(96, 96, 122);
+    
+}
+a{
+    color: whitesmoke;
+}
+h1{
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+}
+.web-developer{
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+}
+h2{
+    display:flex;
+    justify-content: flex-start;
+}
+.skills {
+    border-style: solid none none none;
+    border-width: 1px;
+    border-color: whitesmoke;
+    padding-top: 20px;
+}
+.contact {
+    border-style: solid none none none;
+    border-width: 1px;
+    border-color: whitesmoke;
+    padding-top: 20px;
+}
+.footer{
+    border-style: solid none none none;
+    border-width: 1px;
+    text-decoration: underline;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgb(96, 96, 122);
+}
+.copyright{
+    display:flex;
+    justify-content: center;
+
+}
+.fotarolo {
+ box-sizing: border-box;
+ border: solid 1px;
+ padding: 10px;
+}
+ 
+
+input[type=text] {
+    width: 100%;
+    padding: 5px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+ .submit {
+   width: 100%;
+   padding: 10px 20px;
+   margin: 5px 0;
+    background-color: rgb(96, 96, 122);
+    color: whitesmoke;
+}
