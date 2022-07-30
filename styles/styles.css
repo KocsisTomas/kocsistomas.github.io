@@ -33,6 +33,11 @@ h2{
     display:flex;
     justify-content: flex-start;
 }
+.about{
+    border-style: solid none none none;
+    border-width: 1px;
+    border-color: whitesmoke;
+}
 .skills {
     border-style: solid none none none;
     border-width: 1px;
@@ -81,4 +86,17 @@ input[type=text] {
    margin: 5px 0;
     background-color: rgb(96, 96, 122);
     color: whitesmoke;
+}
+.git {
+    width: 25px;
+    padding-right: 5px;
+}
+.linkedin{
+    width: 25px;
+    
+}
+.social{
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
 }
