@@ -2,48 +2,107 @@
     box-sizing: border-box;
     text-shadow: 5px 3px 5px rgb(64, 64, 82);
     margin: 0;
+    padding: 0;
     text-decoration: none;
     list-style-type: none;
     list-style: none;
     color: whitesmoke;
+    
 }
-
 
 img{
     width: 100%;
     height: auto;
 }
-
+.menu-item{
+    height: 100%;
+    padding:  18px;
+    text-align: center;
+    cursor: pointer;
+}
 .menu-item:hover{
-    text-decoration: underline;
+    background-color: rgb(134, 134, 134);
 }
 body {
     background-color: rgb(77, 77, 114);    
-}
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: rgb(96, 96, 122);    
-    padding:18px;
-    width: 100%;
+} 
+@media screen and (max-width: 675px)  {
+.container{
+    background-color:rgb(96, 96, 122);
+  
+    height: 54px;
     
 }
+.header{
+display: grid;
+position: absolute;
+background-color: rgb(96, 96, 122);
+width: 50%;
+top: 54px;
+right: 0;
 
+transform: translateY(-120%);
+z-index: 1;
+transition: .6s;
+
+
+}
+
+nav .navbar-toggler{
+    display: grid;
+    right: 2px;
    
+   
+}
+
+}
+.navbar-toggler{
+    display: none;
+    justify-content: flex-end;
+    height: min-content;
+    margin: 10px 10px ;
+    cursor: pointer;
+    position: absolute;
+
+}
+.bar {
+width: 40px;
+height: 4px;
+margin-bottom: 8px;
+background-color: white;
+border-radius: 10%;
+transition: .4s;
+
+}
+input{
+    display: none;
+}
+input:checked ~ .header  {
+    transform: translateY(0);
+    
+}
+input:checked ~ .navbar-toggler{
+    margin-top: 35px;
+
+}
+input:checked ~ .bar:nth-child(1){
+    position: absolute;
+    transform: rotate(45deg);
+}
+input:checked ~ .bar:nth-child(2){
+    display: none;
+}
+input:checked ~ .bar:nth-child(3){
+    
+    transform: rotate(-45deg);
+}
 img.foto{
     display: none;
 }
-@media screen and (min-width: 576px){
+@media screen and (min-width: 675px){
 
-header{ 
-     display: flex;
-  }
     
-header{
-    content: none;
-   } 
-   img.foto{
+img.foto{
     display: grid;
 }
 .header-navigation{
@@ -55,12 +114,13 @@ header{
     justify-content: space-around;
     background-color: rgb(96, 96, 122);    
     position: fixed;
-    padding:18px;
+    top: 0;
     width: 100%;
- 
+   
 }
    section.name-container{
     margin-top: 60px;
+    
    }
 }
 
