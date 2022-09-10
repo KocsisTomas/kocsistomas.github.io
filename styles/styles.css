@@ -40,7 +40,6 @@ background-color: rgb(96, 96, 122);
 width: 50%;
 top: 54px;
 right: 0;
-
 transform: translateY(-120%);
 z-index: 1;
 transition: .6s;
