@@ -6,8 +6,10 @@
     text-decoration: none;
     list-style-type: none;
     list-style: none;
-    color: whitesmoke;
-    
+    color: whitesmoke;   
+}
+h1 h2 {
+    font-size: 24px;
 }
 
 img{
@@ -16,32 +18,40 @@ img{
 }
 .menu-item{
     height: 100%;
+    width: 100%;
     padding:  18px;
     text-align: center;
     cursor: pointer;
+    
 }
 .menu-item:hover{
     background-color: rgb(134, 134, 134);
 }
 body {
-    background-color: rgb(77, 77, 114);    
+    background-color: rgb(77, 77, 114);
+        
 } 
 @media screen and (max-width: 675px)  {
-.container{
+.header-navigation{
+    display:flex;
+    width: 100%;
     background-color:rgb(96, 96, 122);
-  
+    position: fixed;
     height: 54px;
-    
+    top: 0px;   
 }
+section.name-container{
+    margin-top: 60px;
+   }
 .header{
-display: grid;
+display: block;
 position: absolute;
 background-color: rgb(96, 96, 122);
 width: 50%;
 top: 54px;
 right: 0;
 transform: translateY(-120%);
-z-index: 1;
+z-index: -1;
 transition: .6s;
 
 
@@ -50,8 +60,6 @@ transition: .6s;
 nav .navbar-toggler{
     display: grid;
     right: 2px;
-   
-   
 }
 
 }
@@ -76,22 +84,22 @@ transition: .4s;
 input{
     display: none;
 }
-input:checked ~ .header  {
+input:checked ~ .container nav .header{
     transform: translateY(0);
     
 }
-input:checked ~ .navbar-toggler{
-    margin-top: 35px;
+input:checked ~ .container nav .navbar-toggler{
+    margin-top: 20px;
 
 }
-input:checked ~ .bar:nth-child(1){
+input:checked ~ .container nav .bar:nth-child(1){
     position: absolute;
     transform: rotate(45deg);
 }
-input:checked ~ .bar:nth-child(2){
+input:checked ~ .container nav .bar:nth-child(2){
     display: none;
 }
-input:checked ~ .bar:nth-child(3){
+input:checked ~.container nav .bar:nth-child(3){
     
     transform: rotate(-45deg);
 }
@@ -117,9 +125,8 @@ img.foto{
     width: 100%;
    
 }
-   section.name-container{
+section.name-container{
     margin-top: 60px;
-    
    }
 }
 
@@ -203,6 +210,7 @@ img.foto{
 }
 p{
     margin: 10px;
+    font-size: 18px;
 }
 
 .copyright{
@@ -256,13 +264,13 @@ label{
     background-color: rgb(62, 62, 80);
     }
 .git {
-    width: 30px;
+    width: 40px;
     
     padding-right: 5px;
+    
 }
 .linkedin{
-    width: 25px;
-    
+    width: 35px;
 }
 .social{
     display: flex;
