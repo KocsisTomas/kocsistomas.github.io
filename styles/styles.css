@@ -123,6 +123,7 @@ img.foto{
     
 img.foto{
     display: grid;
+    
 }
 .header-navigation{
     display: block;
@@ -155,6 +156,7 @@ section.name-container{
     width: 200px;
     padding: 0px;
     border-radius: 50%;
+    box-shadow: 3px 3px 5px black;
 }
 .web-developer{
     display: grid;
@@ -219,7 +221,7 @@ section.name-container{
     border-style: solid none none none;
     border-width: 1px;
     border-color: whitesmoke;
-    padding-top: 20px;
+    padding: 20px 0px 20px;
     margin: 10px;
     
 }
@@ -246,17 +248,20 @@ p{
 }
  
 
-input[type=text] {
-    width: 50%;
+#name-id, #email-id, #message-id {
+    width: 70%;
     padding: 5px 20px;
     color: black;
     display: block;
     margin:7px auto;
     box-shadow: 5px 5px 5px  rgb(64, 64, 82);
     text-shadow: none;
-   
+    
   }
+
+
 label{
+    margin-top: 20px;
     font-weight: bold;
     display: block;
     text-align: center;
