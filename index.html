@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://kit.fontawesome.com/1a884ae4f1.js" crossorigin="anonymous"></script>
     <title>Tomáš Kocsis Web Developer</title>
 </head>
 <body>
-    <input type="checkbox" id="toggle">
+    <input type="checkbox" id="toggle" class="js-checkbox">
     <header class="container" id="home">
         <nav class="header-navigation">
             <label class="navbar-toggler" for="toggle">
@@ -16,19 +17,19 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
             </label>
-            <ul class="header">
-                <li class="li-header" ><a class="menu-item" href="#home">Home</a></li>
-                <li class="li-header" ><a class="menu-item" href="#about">About</a></li>
-                <li class="li-header" ><a class="menu-item" href="#skills">Skills</a></li>
-                <li class="li-header" ><a class="menu-item" href="#portfolio">Portfolio</a></li>
-                <li class="li-header" ><a class="menu-item" href="#contact">Contact</a></li>
+            <ul class="header js-navlist">
+                <li class="li-header " ><a class="menu-item" href="#home">Home</a></li>
+                <li class="li-header " ><a class="menu-item" href="#about">About</a></li>
+                <li class="li-header " ><a class="menu-item" href="#skills">Skills</a></li>
+                <li class="li-header " ><a class="menu-item" href="#portfolio">Portfolio</a></li>
+                <li class="li-header " ><a class="menu-item" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
     <section class="name-container">
-        <h1 class="name">Tomáš Kocsis</h1>
+        <h1 class="name">Kocsis Tomáš</h1>
         <h2 class="web-developer">Web Developer</h2>
         <img class="foto" src="./img/profil-kep.png" alt="foto">
         <div class="social">    
@@ -38,7 +39,7 @@
     </section>
     <section id="about">
         <h2 class="about">About</h2>
-        <p>I am Tomáš Kocsis a Web Developer.</p>
+        <p>I am Kocsis Tomáš a Web Developer.</p>
        
     </section>
     <section id="skills">
@@ -52,12 +53,15 @@
     <section id="portfolio">
         <h2 class="portfolio">Portfolio</h2>
             <ul class="portfolio-list">
-                <li class="portfolio-item"><img src="./img/portfolio.png" alt="porfolio"></li>
-                <li class="portfolio-item"><img src="./img/portfolio.png" alt="portfolio"></li>
-                <li class="portfolio-item"><img src="./img/portfolio.png" alt="portfolio"></li>
-                <li class="portfolio-item"><img src="./img/portfolio.png" alt="portfolio"></li>
-                <li class="portfolio-item"><img src="./img/portfolio.png" alt="portfolio"></li>
-                <li class="portfolio-item"><img src="./img/portfolio.png" alt="portfolio"></li>
+                <li class="portfolio-item">
+                    <i class="fab fa-html5 fa-4x html-logo"></i>
+                    <i class="fa-brands fa-css3-alt fa-4x css-logo"></i>
+                    <img src="./img/portfolio.png" alt="portfolio"></li>
+                <li class="portfolio-item"><img src="./img/portfolio.png" alt="portfolio" class="p-img"></li>
+                <li class="portfolio-item"><img src="./img/portfolio.png" alt="portfolio" class="p-img"></li>
+                <li class="portfolio-item"><img src="./img/portfolio.png" alt="portfolio" class="p-img"></li>
+                <li class="portfolio-item"><img src="./img/portfolio.png" alt="portfolio" class="p-img"></li>
+                <li class="portfolio-item"><img src="./img/portfolio.png" alt="portfolio" class="p-img"></li>
             </ul>
     </section>
     <section id="contact">
@@ -66,15 +70,15 @@
             <div class="fotarolo">
                <div class="tarolo">
                    <label for="name-id">Your Name:</label>
-                   <input type="text" name="Name" id="name-id"> 
+                   <input type="text" name="Name" id="name-id" class="js-input"> 
                </div>
                <div class="tarolo">
                    <label for="email-id">Your Mail:</label>
-                   <input type="email" name="email" id="email-id">
+                   <input type="email" name="email" id="email-id" class="js-input">
                </div>
                <div class="tarolo">
                    <label for="message-id">Your Message:</label>
-                   <textarea name="message" id="message-id" cols="30" rows="10"></textarea>
+                   <textarea class="js-input" name="message" id="message-id" cols="30" rows="10"></textarea>
                    
                </div>
                <div>
@@ -88,5 +92,6 @@
         
         <p class="copyright">Copyright ​©​ 2022 Tomáš Kocsis</p>
     </footer>
+    <script src="./index.js"></script>
 </body>
 </html>

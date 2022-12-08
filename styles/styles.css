@@ -16,6 +16,25 @@ img{
     width: 100%;
     height: auto;
 }
+.p-img{
+    width: 350px;
+    height: 350px;
+}
+.portfolio-item{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+   align-content: center;
+   
+    align-items: center;
+ 
+}
+.html-logo, .css-logo {
+    
+margin: 20px;
+
+}
 
 
 .li-header  {
