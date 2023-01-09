@@ -17,25 +17,22 @@ img{
     height: auto;
 }
 .p-img{
-    width: 350px;
-    height: 350px;
+    min-width: 350px;
+    min-height: 350px;
+    border-radius: 10px;
 }
+
+
 .portfolio-item{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
 
    align-content: center;
    
     align-items: center;
- 
+     
 }
-.html-logo, .css-logo {
-    
-margin: 20px;
-
-}
-
 
 .li-header  {
 
@@ -48,9 +45,7 @@ margin: 20px;
    
     padding:  18px ;
     text-align: center;
-    cursor: pointer;
-    
-  
+    cursor: pointer;   
     
 }
 .menu-item:hover{
@@ -58,112 +53,10 @@ margin: 20px;
 }
 body {
     background-color: rgb(77, 77, 114);
+    
         
 } 
-@media screen and (max-width: 675px)  {
-.header-navigation{
-    display:flex;
-    width: 100%;
-    background-color:rgb(96, 96, 122);
-    position: fixed;
-    height: 54px;
-    top: 0px;   
-    
-}
-section.name-container{
-    margin-top: 60px;
-   }
-.header{
-    display: block;
-    position: absolute;
-    background-color: rgb(96, 96, 122);
-    width: 50%;
-    top: 54px;
-    right: 0;
-    transform: translateY(-120%);
-    z-index: -1;
-    transition: .6s;
 
-
-
-}
-
-nav .navbar-toggler{
-    display: grid;
-    right: 2px;
-}
-
-}
-.navbar-toggler{
-    display: none;
-    justify-content: flex-end;
-    height: min-content;
-    margin: 10px 10px ;
-    cursor: pointer;
-    position: absolute;
-
-}
-.bar {
-    width: 40px;
-    height: 4px;
-    margin-bottom: 8px;
-    background-color: white;
-    border-radius: 10%;
-    transition: .4s;
-
-}
-input{
-    display: none;
-}
-input:checked ~ .container nav .header{
-    transform: translateY(0);
-    
-}
-input:checked ~ .container nav .navbar-toggler{
-    margin-top: 20px;
-
-}
-input:checked ~ .container nav .bar:nth-child(1){
-    position: absolute;
-    transform: rotate(45deg);
-}
-input:checked ~ .container nav .bar:nth-child(2){
-    display: none;
-}
-input:checked ~.container nav .bar:nth-child(3){
-    
-    transform: rotate(-45deg);
-}
-img.foto{
-    display: none;
-}
-@media screen and (min-width: 675px){
-
-    
-img.foto{
-    display: grid;
-    
-}
-.header-navigation{
-    display: block;
-}    
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: rgb(96, 96, 122);    
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 54px;
-    
-    
-    
-}
-section.name-container{
-    margin-top: 70px;
-   }
-}
 
 .name{
     display: grid;
@@ -183,6 +76,21 @@ section.name-container{
     margin: 0px;
          
 }
+.git {
+    width: 40px;
+    
+    padding-right: 5px;
+    
+}
+.linkedin{
+    width: 35px;
+}
+.social{
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+}
+
 .foto {grid-area: foto;}
 .web-developer {grid-area: web;}
 .name{grid-area: name;}
@@ -211,6 +119,24 @@ section.name-container{
     padding-top: 20px;
     margin: 10px;
 }
+
+.w-icon{
+    width: 35px;
+}
+.portfolio-icons-container{
+    position: relative;
+    z-index: 0;
+    
+}
+.portfolio-icons{
+    position: absolute;
+    top: 35px;
+    left: 10px;
+    
+}
+.git.w-icon:hover {
+    width: 45px;
+}
 .portfolio{
     border-style: solid none none none;
     border-width: 1px;
@@ -224,18 +150,7 @@ section.name-container{
 .portfolio-item{
     margin: 10px;
 }
-@media screen and (min-width: 768px) {
-.portfolio-list{
-    display: grid;
-    grid-template-columns: auto auto;
-}
-}
-@media screen and (min-width: 992px){
-    .portfolio-list{
-        display: grid;
-        grid-template-columns: auto auto auto;
-    }    
-}
+
 .contact {
     border-style: solid none none none;
     border-width: 1px;
@@ -304,17 +219,127 @@ label{
 .submit:hover{
     background-color: rgb(62, 62, 80);
     }
-.git {
-    width: 40px;
+
+
+@media screen and (max-width: 675px)  {
+    .header-navigation{
+        display:flex;
+        width: 100%;
+        background-color:rgb(96, 96, 122);
+        position: fixed;
+        height: 54px;
+        top: 0px;   
+        z-index: 1;
+        
+    }
+    section.name-container{
+        margin-top: 60px;
+       }
+    .header{
+        display: block;
+        position: absolute;
+        background-color: rgb(96, 96, 122);
+        width: 50%;
+        top: 54px;
+        right: 0;
+        transform: translateY(-120%);
+        z-index: -1;
+        transition: .6s;
     
-    padding-right: 5px;
     
+    
+    }
+    
+    nav .navbar-toggler{
+        display: grid;
+        right: 2px;
+    }
+    
+    }
+    .navbar-toggler{
+        display: none;
+        justify-content: flex-end;
+        height: min-content;
+        margin: 10px 10px ;
+        cursor: pointer;
+        position: absolute;
+    
+    }
+    .bar {
+        width: 40px;
+        height: 4px;
+        margin-bottom: 8px;
+        background-color: white;
+        border-radius: 10%;
+        transition: .4s;
+    
+    }
+    li.portfolio-item{
+        margin: 20px;
+        
+    }
+    
+    input{
+        display: none;
+    }
+    input:checked ~ .container nav .header{
+        transform: translateY(0);
+        
+    }
+    input:checked ~ .container nav .navbar-toggler{
+        margin-top: 20px;
+    
+    }
+    input:checked ~ .container nav .bar:nth-child(1){
+        position: absolute;
+        transform: rotate(45deg);
+    }
+    input:checked ~ .container nav .bar:nth-child(2){
+        display: none;
+    }
+    input:checked ~.container nav .bar:nth-child(3){
+        
+        transform: rotate(-45deg);
+    }
+    img.foto{
+        display: none;
+    }
+    @media screen and (min-width: 675px){
+    
+        
+    img.foto{
+        display: grid;
+        
+    }
+    .header-navigation{
+        display: block;
+    }    
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgb(96, 96, 122);    
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 54px;    
+        z-index: 1;
+    }
+    
+    section.name-container{
+        margin-top: 70px;
+       }
+    }
+
+@media screen and (min-width: 768px) {
+.portfolio-list{
+    display: grid;
+    grid-template-columns: auto auto;
 }
-.linkedin{
-    width: 35px;
 }
-.social{
-    display: flex;
-    justify-content: flex-start;
-    margin: 10px;
+@media screen and (min-width: 992px){
+    .portfolio-list{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }    
 }
